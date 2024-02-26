@@ -1,0 +1,33 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "workbench.colorTheme": "Office Black Theme (Word)",
+    "restoreTerminals.terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "build",
+            "commands": ["cls"],
+            "color": "red"
+          },
+          {
+            "name": "dev",
+            "commands": ["cls"]
+          }
+        ]
+      },
+      {
+        "splitTerminals": [
+          {
+            "name": "cmd",
+            "commands": ["cls"],
+          }
+        ]
+      }
+    ]
+  }
+}
