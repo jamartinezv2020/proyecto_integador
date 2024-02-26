@@ -9,11 +9,13 @@
     "build": "tsc -w"
   },
   "keywords": [
-    "Mintic",
-    "Mern",
-    "UIS"
+    "Universidad de Alicante",
+    "TEAC",
+     "TEAC",
+    "Universidad de Antioquia",
+    "Ingeniería de Sistemas"
   ],
-  "author": "Andrés Guerrero",
+  "author": "José Alfredo Martínez Valdés",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
