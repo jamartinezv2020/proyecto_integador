@@ -6,13 +6,9 @@ import ConexionDB from "./ConexionDB";
 import seguridad from "../middleware/Seguridad";
 
 // Import de las rutas
-import citaRuta from "../ruta/CitaRuta";
 import perfilRuta from "../ruta/PerfilRuta";
 import usuarioRuta from "../ruta/UsuarioRuta";
 import categoriaRuta from "../ruta/CategoriaRuta";
-import productoRuta from "../ruta/ProductoRuta";
-import medicamentoRuta from "../ruta/MedicamentoRuta";
-import ventaRuta from "../ruta/VentaRuta";
 import usuarioPrivadoRuta from "../ruta/UsuarioPrivadoRuta";
 // ****************************************************
 
@@ -43,11 +39,7 @@ class Servidor {
     this.app.use("/api/privada/perfil", seguridad.verificarToken, perfilRuta);
     this.app.use( "/api/privada/usuario", seguridad.verificarToken, usuarioPrivadoRuta );
     this.app.use("/api/privada/categoria", seguridad.verificarToken, categoriaRuta);
-    this.app.use( "/api/privada/producto", seguridad.verificarToken, productoRuta );
-    this.app.use( "/api/privada/medicamento", seguridad.verificarToken, medicamentoRuta );
-    this.app.use("/api/privada/cita", seguridad.verificarToken, citaRuta);
-    this.app.use("/api/privada/venta", seguridad.verificarToken, ventaRuta);
-  }
+     }
 
   public iniciarServidor(): void {
     this.app.listen(this.app.get("PORT"), () => {
